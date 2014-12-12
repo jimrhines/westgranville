@@ -1,0 +1,10 @@
+/*
+Theme Name:     westgranvilleplate
+Description:    West Granville Presbyterian Church\'s child theme of Boilerplate
+Author:         jimrhines
+Template:       wp-theme-html5-boilerplate-master
+
+(optional values you can add: Theme URI, Author URI, Version)
+*/
+
+@import url("../wp-theme-html5-boilerplate-master/style.css");
