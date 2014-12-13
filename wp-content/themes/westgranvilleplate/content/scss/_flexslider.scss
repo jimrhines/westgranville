@@ -1,0 +1,74 @@
+.flexslider {
+	position: relative;
+	max-width: 1280px;
+	margin: 0 auto;
+
+	li { margin-bottom: 0; }
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.flex-viewport { min-height: 200px; }
+
+.slide { position: relative; }
+
+.slide-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 4;
+	width: 100%;
+	background-color: #222;
+	background-color: rgba(0,0,0,.75);
+	color: #fff;
+	padding-top: 1em;
+	padding-bottom: 3em;
+
+	h2 { font-size: 2em; }
+
+	p { font-size: 1.2em; }
+
+	@media only screen and (max-width: 767px) {
+		position: relative;
+		bottom: auto;
+		padding-bottom: 1em;
+		background-color: transparent;
+		color: inherit;
+
+		p { font-size: 1em; }
+	}
+}
+
+.flex-control-nav {
+	position: relative;
+	z-index: 9;
+	@extend .reduced;
+	margin-top: -2em;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 0 .5em;
+	}
+
+	a {
+		display: block;
+		cursor: pointer;
+		text-indent: -999em;
+		background-color: #ddd;
+		width: 17px;
+		height: 17px;
+		border-radius: 100%;
+
+		&.flex-active { background-color: $link-color; }
+
+		&:hover { background-color: #ccc; }
+	}
+
+	@media only screen and (max-width: 767px) {
+		margin: 0;
+	}
+}

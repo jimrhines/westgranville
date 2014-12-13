@@ -1,0 +1,70 @@
+body {
+	font-size: $font-size-base;
+	font-family: $font-family-base;
+	line-height: $line-height-base;
+	font-weight: $font-weight-base;
+	color: $color-base;
+	background: $body-bg;
+
+	@media only screen and (max-width: 767px) {
+		background-color: #222;
+	}
+}
+
+a {
+	color: $link-color;
+
+	&:hover { color: $link-hover-color; }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	font-family: $headings-font-family;
+	line-height: $headings-line-height;
+	font-weight: $headings-font-weight;
+	color: $headings-color;
+	margin: $headings-margin;
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+
+h2, .h2 { font-size: $font-size-h2; }
+
+h3, .h3 { font-size: $font-size-h3; }
+
+h4, .h4 { font-size: $font-size-h4; }
+
+h5, .h5 { font-size: $font-size-h5; }
+
+h6, .h6 { font-size: $font-size-h6; }
+
+#container {
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+	max-width: $container-max-width;
+	background-color: $container-bg;
+	-webkit-transition: -webkit-transform .3s;
+	transition: transform .3s;
+}
+
+.mobile-nav-visible #container {
+	-webkit-transform: translateX(260px);
+	transform: translateX(260px);
+
+	@media only screen and (min-width: 768px) {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	html,
+	body { overflow-x: hidden; }
+
+}

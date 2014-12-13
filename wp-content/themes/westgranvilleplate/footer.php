@@ -43,5 +43,17 @@
 				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>">Examples</a></li>
 			</ul>
 		</nav>
+		<script>
+			Modernizr.load([
+				{
+					load: [ 
+						//'<?php bloginfo('stylesheet_directory'); ?>/content/js/scripts.js'
+					],
+				    complete : function () {
+				    
+				    }
+				}
+			]);
+		</script>
 	</body>
 </html>
