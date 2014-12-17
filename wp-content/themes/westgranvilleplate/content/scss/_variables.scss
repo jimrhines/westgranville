@@ -22,7 +22,7 @@ $container-max-width: 100% !default;
 //== typography
 
 $font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
+$font-family-serif: 'PT Serif', Georgia, 'Times New Roman', Times, serif !default;
 $font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
@@ -40,7 +40,7 @@ $font-size-h4: $font-size-base !default;				// 14px
 $font-size-h5: ceil($font-size-base * 0.83) !default;	// 12px
 $font-size-h6: ceil($font-size-base * 0.67) !default;	// 10px
 
-$headings-font-family: inherit !default;
+$headings-font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif !default;
 $headings-line-height: 1.2 !default;
 $headings-font-weight: inherit !default;
 $headings-color: inherit !default;

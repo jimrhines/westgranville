@@ -17,6 +17,7 @@
 		<title><?php wp_title(); ?></title>
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>" />
 		<meta name="author" content="<?php bloginfo( 'name' ); ?>" />
+		<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 		<link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory'); ?>/apple-touch-icon.png" />
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/content/css/site.css" />
@@ -50,17 +51,15 @@
 			<header id="site-header" role="banner">
 				<div class="row app-bar">
 					<div class="col">
-						<h6 id="site-title" class="h1"><a href="/home.php"><span><?php bloginfo( 'name' ); ?></span></a></h6>
-
+						<a href="/home.php">
+							<img id="branding" src="<?php bloginfo('stylesheet_directory'); ?>/content/img/presbyterian-church-usa.gif" alt="Presbyterian Church USA" />
+							<h6 id="site-title" class="h1"><span>The Meaning of Faithful Community</span> <?php bloginfo( 'name' ); ?></h6>
+						</a>
 						<button type="button" class="btn btn-link show-for-sm" id="nav-toggle" data-toggle="off-canvas">
 							<span class="fa fa-bars fa-2x"></span>
 							<span class="assistive-text">Menu</span>
-						</button> 
+						</button>
 
-						<button type="button" class="btn btn-link show-for-sm" id="search-toggle">
-							<span class="fa fa-search fa-2x"></span>
-							<span class="assistive-text">Search</span>
-						</button> 
 					</div>
 				</div>
 
@@ -82,7 +81,7 @@
 				</nav>
 
 				<nav class="utility-bar hide-for-sm">
-					<h6 class="assistive-text h2">Utility navigation</h6>
+					<h6 class="assistive-text">Utility navigation</h6>
 					<div class="row">
 						<div class="col">
 							<ul class="inline-list piped">
@@ -92,20 +91,6 @@
 					</div>
 				</nav>
 
-				<div class="search-bar">
-					<div class="row">
-						<div class="col">
-							<form>
-								<label for="site-search-input">Search</label>
-								<input type="search" id="site-search-input" placeholder="Enter keywords" maxlength="150" />
-								<button class="btn btn-primary">
-									<span class="fa fa-search"></span>
-									<span class="assistive-text">Go <span class="fa fa-caret-right"></span></span>
-								</button>
-							</form>
-						</div>
-					</div>
-				</div>
 			</header>
 
 			<main id="content" role="main">

@@ -45,3 +45,15 @@
 	margin-right: auto;
 	margin-left: auto;
 }
+
+#positioning-statement {
+	background: url("../img/home-banners/home-image-tile.gif") repeat-x scroll left top #ffffff;
+
+	h1 {
+		position: absolute; 
+		margin: 3.2em 0 0 1.2em; 
+		font-size: 260%;
+		color: #FFF;
+		text-shadow: 2px 2px 8px #000;
+	} 
+}
