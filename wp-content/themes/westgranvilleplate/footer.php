@@ -46,5 +46,6 @@
 		<!-- init: navigation -->
 		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/_libs/jquery.hoverIntent/jquery.hoverIntent-r7.js"></script>
 		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/navigation.js"></script>
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/flexslider.js"></script>
 	</body>
 </html>

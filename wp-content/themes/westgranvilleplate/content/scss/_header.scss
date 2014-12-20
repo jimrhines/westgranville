@@ -1,7 +1,7 @@
 #site-header {
 	position: relative;
 	z-index: 99;
-	padding: 3.5em 0 0;
+	padding: 0.5em 0 0;
 
 	@media only screen and (max-width: 767px) {
 		padding-top: 0;
@@ -199,7 +199,7 @@
 
 .utility-bar {
 	position: absolute;
-	top: 3em;
+	top: 2.2em;
 	left: 0;
 	z-index: 3;
 	width: 100%;
