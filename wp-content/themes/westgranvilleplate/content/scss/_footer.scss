@@ -20,6 +20,20 @@
 
 	}
 
+	.tel {
+		display: block;
+		margin: .5em 0 0 0;
+		font-weight: bold;
+	}
+
+	form { 
+		margin: 1em 0 0 0; 
+
+		.btn {
+			margin: .5em 0 0 0;
+		}
+	}
+
 }
 
 .social-nav {

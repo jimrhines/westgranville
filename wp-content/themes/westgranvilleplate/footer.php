@@ -2,7 +2,47 @@
 
 			<footer id="site-footer" role="contentinfo">
 				<div class="row">
-					<div class="col md-6 last">
+					<div class="col md-3">
+						<nav>
+							<h2>Church Groups &amp; Going-ons</h2>
+							<ul class="reduced">
+								<li><a href="">December Newsletter</a></li>
+								<li><a href="">December Calendar</a></li>
+								<li><a href="">The Story of Jesus by Evan Anderson</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col md-3">
+						<nav>
+							<h2>Helpful Links</h2>
+							<ul>
+								<li><a href="http://pcusa.org/peacemaking" target="_blank">PCUSA Peacemaking</a></li>
+								<li><a href="">Community Links</a></li>
+								<li><a href="">Scholarships</a></li>
+								<li><a href="">Relief Fund Request Form</a></li>
+								<li><a href="">2013 Annual Report</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col md-3">
+						<h2>Directions</h2>
+						<div itemscope itemtype="http://schema.org/NGO">
+							<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						    	<span itemprop="streetAddress">6935 North 107th Street</span><br />
+								<span itemprop="addressLocality">Milwaukee</span>, <span itemprop="addressRegion">WI</span> <span itemprop="postalCode">53224-4316</span><br />
+								<span itemprop="addressCountry">United States</span>
+						    </span><br />
+						    <a href="tel:4143538680" itemprop="telephone" class="tel">(414) 353-8680</a><br />
+						</div>
+						<form action="http://maps.google.com/maps" method="get">
+							<label for="saddr">Enter your starting address:</label>
+							<input type="text" name="saddr" id="saddr" size="28" value="" />
+			             	<input type="hidden" name="daddr" value="6935 North 107th Street, Milwaukee, WI 53224-4316" />
+			            	<input type="hidden" name="hl" value="en" />
+			            	<input type="submit" class="btn btn-primary" value="Get Directions" />
+						</form>
+					</div>
+					<div class="col md-3 last">
 						<nav class="utility">
 							<h2 class="assistive-text">Utility navigation</h2>
 							<ul class="inline-list piped">
@@ -25,6 +65,8 @@
 							</ul>
 						</nav>
 					</div>
+				</div>
+				<div class="row">
 					<div class="col md-6">
 						<small class="copyright">&#169; <?php echo date("Y"); ?> <a href=""><?php bloginfo( 'name' ); ?></a></small>
 					</div>
