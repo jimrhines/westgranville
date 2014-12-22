@@ -59,7 +59,6 @@
 							<span class="fa fa-bars fa-2x"></span>
 							<span class="assistive-text">Menu</span>
 						</button>
-
 					</div>
 				</div>
 
