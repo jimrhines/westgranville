@@ -25,7 +25,7 @@
 
 		//Home Page
 		if ($template_file == 'home.php'){
-			add_meta_box("worship_schedule_meta", "Worship Schedule", "normal", "low");
+			add_meta_box("worship_schedule_meta", "Worship Schedule", "worship_schedule_meta", "page", "normal", "high");
 		}
 
 		//Landing Pages
@@ -50,6 +50,18 @@
 		$worship_schedule_A_date = $custom["worship_schedule_A_date"][0];
 		$worship_schedule_A_time = $custom["worship_schedule_A_time"][0];
 		$worship_schedule_A_content = $custom["worship_schedule_A_content"][0];
+		$worship_schedule_B_month = $custom["worship_schedule_B_month"][0];
+		$worship_schedule_B_date = $custom["worship_schedule_B_date"][0];
+		$worship_schedule_B_time = $custom["worship_schedule_B_time"][0];
+		$worship_schedule_B_content = $custom["worship_schedule_B_content"][0];
+		$worship_schedule_C_month = $custom["worship_schedule_C_month"][0];
+		$worship_schedule_C_date = $custom["worship_schedule_C_date"][0];
+		$worship_schedule_C_time = $custom["worship_schedule_C_time"][0];
+		$worship_schedule_C_content = $custom["worship_schedule_C_content"][0];
+		$worship_schedule_D_month = $custom["worship_schedule_D_month"][0];
+		$worship_schedule_D_date = $custom["worship_schedule_D_date"][0];
+		$worship_schedule_D_time = $custom["worship_schedule_D_time"][0];
+		$worship_schedule_D_content = $custom["worship_schedule_D_content"][0];
 	?>
 	  	<h2>Worship Schedule A</h2>
 	  	<p>
@@ -67,6 +79,57 @@
 	  	<p>
 	  		<label for="worship_schedule_A_content">Worship Schedule A Content:</label><br />
 	  		<textarea id="worship_schedule_A_content" name="worship_schedule_A_content" rows="10" class="widefat"><?php echo esc_html($worship_schedule_A_content); ?></textarea>
+	  	</p>
+	  	<h2>Worship Schedule B</h2>
+	  	<p>
+			<label for="worship_schedule_B_month">Worship Schedule B Month:</label><br />
+	  		<input id="worship_schedule_B_month" name="worship_schedule_B_month" class="widefat" value="<?php echo esc_html($worship_schedule_B_month); ?>" />
+	  	</p>
+	  	<p>
+			<label for="worship_schedule_B_date">Worship Schedule B Date:</label><br />
+	  		<input id="worship_schedule_B_date" name="worship_schedule_B_date" class="widefat" value="<?php echo esc_html($worship_schedule_B_date); ?>" />
+	  	</p>
+	  	<p>
+			<label for="worship_schedule_B_time">Worship Schedule B Time:</label><br />
+	  		<input id="worship_schedule_B_time" name="worship_schedule_B_time" class="widefat" value="<?php echo esc_html($worship_schedule_B_time); ?>" />
+	  	</p>
+	  	<p>
+	  		<label for="worship_schedule_B_content">Worship Schedule B Content:</label><br />
+	  		<textarea id="worship_schedule_B_content" name="worship_schedule_B_content" rows="10" class="widefat"><?php echo esc_html($worship_schedule_B_content); ?></textarea>
+	  	</p>
+	  	<h2>Worship Schedule C</h2>
+	  	<p>
+			<label for="worship_schedule_C_month">Worship Schedule C Month:</label><br />
+	  		<input id="worship_schedule_C_month" name="worship_schedule_C_month" class="widefat" value="<?php echo esc_html($worship_schedule_C_month); ?>" />
+	  	</p>
+	  	<p>
+			<label for="worship_schedule_C_date">Worship Schedule C Date:</label><br />
+	  		<input id="worship_schedule_C_date" name="worship_schedule_C_date" class="widefat" value="<?php echo esc_html($worship_schedule_C_date); ?>" />
+	  	</p>
+	  	<p>
+			<label for="worship_schedule_C_time">Worship Schedule C Time:</label><br />
+	  		<input id="worship_schedule_C_time" name="worship_schedule_C_time" class="widefat" value="<?php echo esc_html($worship_schedule_C_time); ?>" />
+	  	</p>
+	  	<p>
+	  		<label for="worship_schedule_C_content">Worship Schedule C Content:</label><br />
+	  		<textarea id="worship_schedule_C_content" name="worship_schedule_C_content" rows="10" class="widefat"><?php echo esc_html($worship_schedule_C_content); ?></textarea>
+	  	</p>
+	  	<h2>Worship Schedule D</h2>
+	  	<p>
+			<label for="worship_schedule_D_month">Worship Schedule D Month:</label><br />
+	  		<input id="worship_schedule_D_month" name="worship_schedule_D_month" class="widefat" value="<?php echo esc_html($worship_schedule_D_month); ?>" />
+	  	</p>
+	  	<p>
+			<label for="worship_schedule_D_date">Worship Schedule D Date:</label><br />
+	  		<input id="worship_schedule_D_date" name="worship_schedule_D_date" class="widefat" value="<?php echo esc_html($worship_schedule_D_date); ?>" />
+	  	</p>
+	  	<p>
+			<label for="worship_schedule_D_time">Worship Schedule D Time:</label><br />
+	  		<input id="worship_schedule_D_time" name="worship_schedule_D_time" class="widefat" value="<?php echo esc_html($worship_schedule_D_time); ?>" />
+	  	</p>
+	  	<p>
+	  		<label for="worship_schedule_D_content">Worship Schedule D Content:</label><br />
+	  		<textarea id="worship_schedule_D_content" name="worship_schedule_D_content" rows="10" class="widefat"><?php echo esc_html($worship_schedule_D_content); ?></textarea>
 	  	</p>
 	<?php
 	}
@@ -90,7 +153,42 @@
 		if ( isset($_POST['worship_schedule_A_content']) ) {
 			update_post_meta($post->ID, "worship_schedule_A_content", $_POST["worship_schedule_A_content"]);
 		}
-
+		if ( isset($_POST['worship_schedule_B_month']) ) {
+			update_post_meta($post->ID, "worship_schedule_B_month", $_POST["worship_schedule_B_month"]);
+		}
+		if ( isset($_POST['worship_schedule_B_date']) ) {
+			update_post_meta($post->ID, "worship_schedule_B_date", $_POST["worship_schedule_B_date"]);
+		}
+		if ( isset($_POST['worship_schedule_B_time']) ) {
+			update_post_meta($post->ID, "worship_schedule_B_time", $_POST["worship_schedule_B_time"]);
+		}
+		if ( isset($_POST['worship_schedule_B_content']) ) {
+			update_post_meta($post->ID, "worship_schedule_B_content", $_POST["worship_schedule_B_content"]);
+		}
+		if ( isset($_POST['worship_schedule_C_month']) ) {
+			update_post_meta($post->ID, "worship_schedule_C_month", $_POST["worship_schedule_C_month"]);
+		}
+		if ( isset($_POST['worship_schedule_C_date']) ) {
+			update_post_meta($post->ID, "worship_schedule_C_date", $_POST["worship_schedule_C_date"]);
+		}
+		if ( isset($_POST['worship_schedule_C_time']) ) {
+			update_post_meta($post->ID, "worship_schedule_C_time", $_POST["worship_schedule_C_time"]);
+		}
+		if ( isset($_POST['worship_schedule_C_content']) ) {
+			update_post_meta($post->ID, "worship_schedule_C_content", $_POST["worship_schedule_C_content"]);
+		}
+		if ( isset($_POST['worship_schedule_D_month']) ) {
+			update_post_meta($post->ID, "worship_schedule_D_month", $_POST["worship_schedule_D_month"]);
+		}
+		if ( isset($_POST['worship_schedule_D_date']) ) {
+			update_post_meta($post->ID, "worship_schedule_D_date", $_POST["worship_schedule_D_date"]);
+		}
+		if ( isset($_POST['worship_schedule_D_time']) ) {
+			update_post_meta($post->ID, "worship_schedule_D_time", $_POST["worship_schedule_D_time"]);
+		}
+		if ( isset($_POST['worship_schedule_D_content']) ) {
+			update_post_meta($post->ID, "worship_schedule_D_content", $_POST["worship_schedule_D_content"]);
+		}
 	}
 
 /**
