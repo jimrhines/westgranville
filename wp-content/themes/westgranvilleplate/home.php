@@ -6,7 +6,18 @@ Template Name: Home Page
 <?php get_header(); ?>
 <div id="positioning-statement">
 	<h1>We are West Granville.</h1>
-	<img src="<?php bloginfo('stylesheet_directory'); ?>/content/img/home-banners/west-granville-golf-outing.jpg" alt="West Granville Golf Outing" /><img src="<?php bloginfo('stylesheet_directory'); ?>/content/img/church-backdrop.jpg" alt="West Granville Presbyterian Church" />
+	<?php
+		$banner = array();
+			$banner[] = "west-granville-rhines-wedding.jpg";
+			$banner[] = "west-granville-bell-choir.jpg";
+			$banner[] = "west-granville-benton-harbor.jpg";
+			$banner[] = "west-granville-boy-scouts.jpg";
+			$banner[] = "west-granville-cookout.jpg";
+			$banner[] = "west-granville-kids.jpg";
+			$banner[] = "west-granville-golf-outing.jpg";
+		shuffle($banner);
+	?>
+	<img src="<?php bloginfo('stylesheet_directory'); ?>/content/img/home-banners/<?php echo $banner[0] ?>" alt="West Granville Golf Outing" />
 </div>
 <div class="section row">
 	<div class="col">
@@ -52,6 +63,7 @@ Template Name: Home Page
 								Color Change: Red
 							</p>
 							<h5>5:00 PM Family Christmas Service: God of Surprise!</h5>
+							<p></p>
 							<h5>7:00 PM Lessons and Carols</h5>
 							<p>
 								Candle Introit: Dona Nobis Pacem<br />

@@ -4,7 +4,7 @@
 				<div class="row">
 					<div class="col md-3">
 						<nav>
-							<h2>Church Groups &amp; Going-ons</h2>
+							<h2>Church Groups &amp; Events</h2>
 							<ul class="reduced">
 								<li><a href="">December Newsletter</a></li>
 								<li><a href="">December Calendar</a></li>
@@ -34,7 +34,7 @@
 						    </span><br />
 						    <a href="tel:4143538680" itemprop="telephone" class="tel">(414) 353-8680</a><br />
 						</div>
-						<form action="http://maps.google.com/maps" method="get">
+						<form id="directions" action="http://maps.google.com/maps" method="get">
 							<label for="saddr">Enter your starting address:</label>
 							<input type="text" name="saddr" id="saddr" size="28" value="" />
 			             	<input type="hidden" name="daddr" value="6935 North 107th Street, Milwaukee, WI 53224-4316" />
@@ -53,16 +53,17 @@
 
 							<ul class="social-nav">
 								<li>
-									<a href="https://www.facebook.com" class="icon icon-facebook" target="_blank">
+									<a href="https://www.facebook.com/groups/131212920287320/" class="icon icon-facebook" target="_blank">
 										<span class="fa fa-facebook"></span><span class="assistive-text">Facebook</span>
 									</a>
 								</li>
-								<li>
-									<a href="https://www.youtube.com" class="icon icon-youtube" target="_blank">
-										<span class="fa fa-youtube-play"></span><span class="assistive-text">YouTube</span>
-									</a>
-								</li>
 							</ul>
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+								<input type="hidden" name="cmd" value="_s-xclick" />
+								<input type="hidden" name="hosted_button_id" value="ZCDNM3NXXYYLN" />
+								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal &#45; The safer, easier way to pay online." />
+								<img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" />
+							</form>
 						</nav>
 					</div>
 				</div>
@@ -88,6 +89,5 @@
 		<!-- init: navigation -->
 		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/_libs/jquery.hoverIntent/jquery.hoverIntent-r7.js"></script>
 		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/navigation.js"></script>
-		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/flexslider.js"></script>
 	</body>
 </html>

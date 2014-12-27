@@ -10,10 +10,14 @@
 	@media only screen and (max-width: 767px) {
 		
 		.col {
+			padding-bottom: 1em;
 			text-align: center;
 
+			#directions {
+				margin-bottom: 1em;
+			}
+
 			&.last {
-				padding-bottom: .5em;
 				text-align: center;
 			}
 		}
