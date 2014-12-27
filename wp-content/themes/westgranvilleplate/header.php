@@ -15,13 +15,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<title><?php wp_title(); ?></title>
-		<meta name="description" content="<?php bloginfo( 'description' ); ?>" />
 		<meta name="author" content="<?php bloginfo( 'name' ); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 		<link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory'); ?>/apple-touch-icon.png" />
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/content/css/site.css" />
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
 <?php
 		/* We add some JavaScript to pages with the comment form
 		 * to support sites with threaded comments (when in use).

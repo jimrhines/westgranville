@@ -17,7 +17,7 @@ Template Name: Home Page
 			$banner[] = "west-granville-golf-outing.jpg";
 		shuffle($banner);
 	?>
-	<img src="<?php bloginfo('stylesheet_directory'); ?>/content/img/home-banners/<?php echo $banner[0] ?>" alt="West Granville Golf Outing" />
+	<img src="<?php bloginfo('stylesheet_directory'); ?>/content/img/home-banners/<?php echo $banner[0] ?>" alt="West Granville Presbyterian Church and members of the congregation." />
 </div>
 <div class="section row">
 	<div class="col">
