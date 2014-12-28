@@ -26,15 +26,12 @@
 		//Home Page
 		if ($template_file == 'home.php'){
 			add_meta_box("worship_schedule_meta", "Worship Schedule", "worship_schedule_meta", "page", "normal", "high");
+			add_meta_box("latest_news_meta", "Latest News", "latest_news_meta", "page", "normal", "high");
 		}
 
 		//Landing Pages
 		//if ($template_file != 'home.php'){
 		//}
-
-		//Product Category Pages
-		//add_meta_box("category_introduction_meta", "Introduction", "category_introduction_meta", "categories", "normal", "low");
-		//add_meta_box("category_products_meta", "Category Products", "category_products_meta", "categories", "normal", "low");
 
 		add_action('save_post','my_meta_save');
 	}
@@ -133,6 +130,34 @@
 	  	</p>
 	<?php
 	}
+
+	function latest_news_meta() {
+		global $post;
+		$custom = get_post_custom($post->ID);
+		$latest_news_A_content = $custom["latest_news_A_content"][0];
+		$latest_news_B_content = $custom["latest_news_B_content"][0];
+		$latest_news_C_content = $custom["latest_news_C_content"][0];
+		$latest_news_D_content = $custom["latest_news_D_content"][0];
+	?>
+		<p>Use &#60;h4&#62; for dates and &#60;h5&#62; for headlines for that date. Use &#60;p&#62; tags for content below &#60;h5&#62;. Within &#60;p&#62; tags, use &#60;br &#8725;&#62; to break content to a new line.</p>
+		<p>
+	  		<label for="latest_news_A_content">Latest News A Content:</label><br />
+	  		<textarea id="latest_news_A_content" name="latest_news_A_content" rows="10" class="widefat"><?php echo esc_html($latest_news_A_content); ?></textarea>
+	  	</p>
+	  	<p>
+	  		<label for="latest_news_B_content">Latest News B Content:</label><br />
+	  		<textarea id="latest_news_B_content" name="latest_news_B_content" rows="10" class="widefat"><?php echo esc_html($latest_news_B_content); ?></textarea>
+	  	</p>
+	  	<p>
+	  		<label for="latest_news_C_content">Latest News C Content:</label><br />
+	  		<textarea id="latest_news_C_content" name="latest_news_C_content" rows="10" class="widefat"><?php echo esc_html($latest_news_C_content); ?></textarea>
+	  	</p>
+	  	<p>
+	  		<label for="latest_news_D_content">Latest News D Content:</label><br />
+	  		<textarea id="latest_news_D_content" name="latest_news_D_content" rows="10" class="widefat"><?php echo esc_html($latest_news_D_content); ?></textarea>
+	  	</p>
+	<?php
+	}
 	
 /**
 * Ensures the data entered in the admin by the user is saved
@@ -189,10 +214,24 @@
 		if ( isset($_POST['worship_schedule_D_content']) ) {
 			update_post_meta($post->ID, "worship_schedule_D_content", $_POST["worship_schedule_D_content"]);
 		}
+		if ( isset($_POST['latest_news_A_content']) ) {
+			update_post_meta($post->ID, "latest_news_A_content", $_POST["latest_news_A_content"]);
+		}
+		if ( isset($_POST['latest_news_B_content']) ) {
+			update_post_meta($post->ID, "latest_news_B_content", $_POST["latest_news_B_content"]);
+		}
+		if ( isset($_POST['latest_news_C_content']) ) {
+			update_post_meta($post->ID, "latest_news_C_content", $_POST["latest_news_C_content"]);
+		}
+		if ( isset($_POST['latest_news_D_content']) ) {
+			update_post_meta($post->ID, "latest_news_D_content", $_POST["latest_news_D_content"]);
+		}
+
 	}
 
 /**
 * Final actions to do the above on init and save the posts
 */
 	add_action('save_post', 'save_details');
+
 ?>

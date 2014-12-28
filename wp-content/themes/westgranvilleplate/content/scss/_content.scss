@@ -133,30 +133,31 @@
 		border-bottom: 1px solid #555558;
 	}
 
+	li.worship-schedule {
+		display: flex;	
+	}
+
 	.worship-date-container {
 		float: left;
-		margin: 0 1em 6em 0;
+		margin: 0 1em 0 0;
 		
-
 		.worship-date,
 		.worship-month,
-		.worship-time { 
+		.worship-time {
 			display: block;
 			line-height: 130%;
 		}
 
 		.worship-date {
-			font-size: 220%;
+			font-size: 235%;
 			font-family: $font-family-serif;
 			line-height: 110%;
 		}
 
 		.worship-month {
 			text-transform: uppercase;
-			font-size: 120%;
+			font-size: 135%;
 		}
 
-		.worship-time {
-		}
 	}
 }

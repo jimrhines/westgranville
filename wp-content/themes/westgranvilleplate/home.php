@@ -34,21 +34,93 @@ Template Name: Home Page
 				<div class="panel">
 					<h3>Worship Schedule</h3>
 					<ul class="schedule-news reduced">
-						<li>
-							<div class="worship-date-container">
-								<span class="worship-date">21</span>
-								<span class="worship-month">Dec</span>
-								<span class="worship-time">10:30</span>
-							</div>
-							<p>
-								Advent 4 Love &amp; Advent Candles<br />
-								Advent Introit: Dona Nobis Pacem Adult Choir<br />
-								Special Music- Adult Choir<br />
-								Advent Candle Lighters<br />
-								Scripture: Luke 1:26-38 Announcement to Mary<br />
-								Sermon: How  Can This Be?
-							</p>
-						</li>
+						<?php
+							$worship_schedule_A_month = get_post_custom_values('worship_schedule_A_month');
+							foreach ( $worship_schedule_A_month as $key => $value ) {
+								$worship_schedule_A_month = $value;
+							}
+							$worship_schedule_A_date = get_post_custom_values('worship_schedule_A_date');
+							foreach ( $worship_schedule_A_date as $key => $value ) {
+								$worship_schedule_A_date = $value;
+							}
+							$worship_schedule_A_time = get_post_custom_values('worship_schedule_A_time');
+							foreach ( $worship_schedule_A_time as $key => $value ) {
+								$worship_schedule_A_time = $value;
+							}
+							$worship_schedule_A_content = get_post_custom_values('worship_schedule_A_content');
+							foreach ( $worship_schedule_A_content as $key => $value ) {
+								$worship_schedule_A_content = $value;
+							}
+							$worship_schedule_B_month = get_post_custom_values('worship_schedule_B_month');
+							foreach ( $worship_schedule_B_month as $key => $value ) {
+								$worship_schedule_B_month = $value;
+							}
+							$worship_schedule_B_date = get_post_custom_values('worship_schedule_B_date');
+							foreach ( $worship_schedule_B_date as $key => $value ) {
+								$worship_schedule_B_date = $value;
+							}
+							$worship_schedule_B_time = get_post_custom_values('worship_schedule_B_time');
+							foreach ( $worship_schedule_B_time as $key => $value ) {
+								$worship_schedule_B_time = $value;
+							}
+							$worship_schedule_B_content = get_post_custom_values('worship_schedule_B_content');
+							foreach ( $worship_schedule_B_content as $key => $value ) {
+								$worship_schedule_B_content = $value;
+							}
+							$worship_schedule_C_month = get_post_custom_values('worship_schedule_C_month');
+							foreach ( $worship_schedule_C_month as $key => $value ) {
+								$worship_schedule_C_month = $value;
+							}
+							$worship_schedule_C_date = get_post_custom_values('worship_schedule_C_date');
+							foreach ( $worship_schedule_C_date as $key => $value ) {
+								$worship_schedule_C_date = $value;
+							}
+							$worship_schedule_C_time = get_post_custom_values('worship_schedule_C_time');
+							foreach ( $worship_schedule_C_time as $key => $value ) {
+								$worship_schedule_C_time = $value;
+							}
+							$worship_schedule_C_content = get_post_custom_values('worship_schedule_C_content');
+							foreach ( $worship_schedule_C_content as $key => $value ) {
+								$worship_schedule_C_content = $value;
+							}
+							$worship_schedule_D_month = get_post_custom_values('worship_schedule_D_month');
+							foreach ( $worship_schedule_D_month as $key => $value ) {
+								$worship_schedule_D_month = $value;
+							}
+							$worship_schedule_D_date = get_post_custom_values('worship_schedule_D_date');
+							foreach ( $worship_schedule_D_date as $key => $value ) {
+								$worship_schedule_D_date = $value;
+							}
+							$worship_schedule_D_time = get_post_custom_values('worship_schedule_D_time');
+							foreach ( $worship_schedule_D_time as $key => $value ) {
+								$worship_schedule_D_time = $value;
+							}
+							$worship_schedule_D_content = get_post_custom_values('worship_schedule_D_content');
+							foreach ( $worship_schedule_D_content as $key => $value ) {
+								$worship_schedule_D_content = $value;
+							}
+
+							$a = array(
+								array($worship_schedule_A_month, $worship_schedule_A_date, $worship_schedule_A_time, $worship_schedule_A_content),
+								array($worship_schedule_B_month, $worship_schedule_B_date, $worship_schedule_B_time, $worship_schedule_B_content),
+								array($worship_schedule_C_month, $worship_schedule_C_date, $worship_schedule_C_time, $worship_schedule_C_content),
+								array($worship_schedule_D_month, $worship_schedule_D_date, $worship_schedule_D_time, $worship_schedule_D_content)
+							);
+
+							for ($row = 0; $row < count($a); $row++) {
+								if($a[$row][0] != "") {
+									echo 
+										"<li class=\"worship-schedule\">
+											<div class=\"worship-date-container\">
+												<span class=\"worship-date\">".$a[$row][1]."</span>
+												<span class=\"worship-month\">".$a[$row][0]."</span>
+												<span class=\"worship-time\">".$a[$row][2]."</span>
+											</div>
+											<p>".$a[$row][3]."</p>
+										</li>";
+								}
+							}
+						?>
 					</ul>
 				</div>
 			</div>
@@ -56,21 +128,38 @@ Template Name: Home Page
 				<div class="panel">
 					<h3>Latest News / Events</h3>
 					<ul class="schedule-news reduced">
-						<li>
-							<h4>Wednesday, December 24</h4>
-							<p>
-								Christmas Eve<br />
-								Color Change: Red
-							</p>
-							<h5>5:00 PM Family Christmas Service: God of Surprise!</h5>
-							<p></p>
-							<h5>7:00 PM Lessons and Carols</h5>
-							<p>
-								Candle Introit: Dona Nobis Pacem<br />
-								Candle Lighters<br />
-								Adult Choir, Brass Choir, Saxophone &amp; Marimba
-							</p>
-						</li>
+						<?php
+							$latest_news_A_content = get_post_custom_values('latest_news_A_content');
+							foreach ( $latest_news_A_content as $key => $value ) {
+								$latest_news_A_content = $value;
+							}
+							$latest_news_B_content = get_post_custom_values('latest_news_B_content');
+							foreach ( $latest_news_B_content as $key => $value ) {
+								$latest_news_B_content = $value;
+							}
+							$latest_news_C_content = get_post_custom_values('latest_news_C_content');
+							foreach ( $latest_news_C_content as $key => $value ) {
+								$latest_news_C_content = $value;
+							}
+							$latest_news_D_content = get_post_custom_values('latest_news_D_content');
+							foreach ( $latest_news_D_content as $key => $value ) {
+								$latest_news_D_content = $value;
+							}
+
+							$a = array(
+								array($latest_news_A_content),
+								array($latest_news_B_content),
+								array($latest_news_C_content),
+								array($latest_news_D_content)
+							);
+
+							for ($row = 0; $row < count($a); $row++) {
+								if($a[$row][0] != "") {
+									echo 
+										"<li>".$a[$row][0]."</li>";
+								}
+							}
+						?>
 					</ul>
 				</div>
 			</div>

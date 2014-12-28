@@ -6,9 +6,7 @@
 						<nav>
 							<h2>Church Groups &amp; Events</h2>
 							<ul class="reduced">
-								<li><a href="">December Newsletter</a></li>
-								<li><a href="">December Calendar</a></li>
-								<li><a href="">The Story of Jesus by Evan Anderson</a></li>
+								<?php if ( dynamic_sidebar('first-footer-widget-area') ) : else : endif; ?>
 							</ul>
 						</nav>
 					</div>
@@ -19,8 +17,8 @@
 								<li><a href="http://pcusa.org/peacemaking" target="_blank">PCUSA Peacemaking</a></li>
 								<li><a href="">Community Links</a></li>
 								<li><a href="">Scholarships</a></li>
-								<li><a href="">Relief Fund Request Form</a></li>
-								<li><a href="">2013 Annual Report</a></li>
+								<li><a href="<?php bloginfo('url'); ?>/wp-content/uploads/2014/12/wgpc-relief-fund-request-form.doc" target="_blank">Relief Fund Request Form</a></li>
+								<li><a href="<?php bloginfo('url'); ?>/wp-content/uploads/2014/12/annual-report-2013.pdf" target="_blank">2013 Annual Report</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -34,7 +32,7 @@
 						    </span><br />
 						    <a href="tel:4143538680" itemprop="telephone" class="tel">(414) 353-8680</a><br />
 						</div>
-						<form id="directions" action="http://maps.google.com/maps" method="get">
+						<form id="directions" action="http://maps.google.com/maps" method="get" target="_blank">
 							<label for="saddr">Enter your starting address:</label>
 							<input type="text" name="saddr" id="saddr" size="28" value="" />
 			             	<input type="hidden" name="daddr" value="6935 North 107th Street, Milwaukee, WI 53224-4316" />
