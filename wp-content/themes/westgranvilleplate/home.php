@@ -2,8 +2,8 @@
 /*
 Template Name: Home Page
 */
-?>
-<?php get_header(); ?>
+
+get_header(); ?>
 <div id="positioning-statement">
 	<h1>We are West Granville.</h1>
 	<?php

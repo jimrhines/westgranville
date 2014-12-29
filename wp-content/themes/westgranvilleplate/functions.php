@@ -30,8 +30,10 @@
 		}
 
 		//Landing Pages
-		//if ($template_file != 'home.php'){
-		//}
+		if ($template_file != 'home.php'){
+			add_meta_box("default_page_meta", "Main Content", "default_page_meta", "page", "normal", "high");
+			add_meta_box("default_page_sidebar_meta", "Sidebar", "default_page_sidebar_meta", "page", "normal", "high");
+		}
 
 		add_action('save_post','my_meta_save');
 	}
@@ -159,6 +161,61 @@
 	<?php
 	}
 	
+	//Pastor's Message
+	function default_page_meta() {
+		global $post;
+		$custom = get_post_custom($post->ID);
+		$default_page_header_image = $custom["default_page_header_image"][0];
+		$default_page_lead_image = $custom["default_page_lead_image"][0];
+		$default_page_lead_image_alt = $custom["default_page_lead_image_alt"][0];
+		$default_page_headline = $custom["default_page_headline"][0];
+		$default_page_subheadline = $custom["default_page_subheadline"][0];
+		$default_page_content = $custom["default_page_content"][0];
+	?>
+		<p>
+			<label for="default_page_header_image">Header Image (altar-table.jpg, child-drawing.jpg, or congregation.jpg):</label><br />
+	  		<input id="default_page_header_image" name="default_page_header_image" class="widefat" value="<?php echo esc_html($default_page_header_image); ?>" />
+	  	</p>
+		<p>
+			<label for="default_page_lead_image">Lead Image (copy and paste URL from media library):</label><br />
+	  		<input id="default_page_lead_image" name="default_page_lead_image" class="widefat" value="<?php echo esc_html($default_page_lead_image); ?>" />
+	  	</p>
+	  	<p>
+			<label for="default_page_lead_image_alt">Lead Image Alt Text:</label><br />
+	  		<input id="default_page_lead_image_alt" name="default_page_lead_image_alt" class="widefat" value="<?php echo esc_html($default_page_lead_image_alt); ?>" />
+	  	</p>
+		<p>
+			<label for="default_page_headline">Headline:</label><br />
+	  		<input id="default_page_headline" name="default_page_headline" class="widefat" value="<?php echo esc_html($default_page_headline); ?>" />
+	  	</p>
+	  	<p>
+			<label for="default_page_subheadline">Sub Headline:</label><br />
+	  		<input id="default_page_subheadline" name="default_page_subheadline" class="widefat" value="<?php echo esc_html($default_page_subheadline); ?>" />
+	  	</p>
+		<p>
+	  		<label for="default_page_content">Content (use &#60;p&#62; and &#60;&#8725;p&#62; tags to separate paragraphs):</label><br />
+	  		<textarea id="default_page_content" name="default_page_content" rows="10" class="widefat"><?php echo esc_html($default_page_content); ?></textarea>
+	  	</p>
+	<?php
+	}
+
+	function default_page_sidebar_meta() {
+		global $post;
+		$custom = get_post_custom($post->ID);
+		$default_page_sidebar_headline = $custom["default_page_sidebar_headline"][0];
+		$default_page_sidebar_content = $custom["default_page_sidebar_content"][0];
+	?>
+		<p>
+			<label for="default_page_sidebar_headline">Headline:</label><br />
+	  		<input id="default_page_sidebar_headline" name="default_page_sidebar_headline" class="widefat" value="<?php echo esc_html($default_page_sidebar_headline); ?>" />
+	  	</p>
+		<p>
+	  		<label for="default_page_sidebar_content">Content:</label><br />
+	  		<textarea id="default_page_sidebar_content" name="default_page_sidebar_content" rows="10" class="widefat"><?php echo esc_html($default_page_sidebar_content); ?></textarea>
+	  	</p>
+	<?php
+	}
+	
 /**
 * Ensures the data entered in the admin by the user is saved
 */
@@ -226,7 +283,30 @@
 		if ( isset($_POST['latest_news_D_content']) ) {
 			update_post_meta($post->ID, "latest_news_D_content", $_POST["latest_news_D_content"]);
 		}
-
+		if ( isset($_POST['default_page_header_image']) ) {
+			update_post_meta($post->ID, "default_page_header_image", $_POST["default_page_header_image"]);
+		}
+		if ( isset($_POST['default_page_lead_image']) ) {
+			update_post_meta($post->ID, "default_page_lead_image", $_POST["default_page_lead_image"]);
+		}
+		if ( isset($_POST['default_page_lead_image_alt']) ) {
+			update_post_meta($post->ID, "default_page_lead_image_alt", $_POST["default_page_lead_image_alt"]);
+		}
+		if ( isset($_POST['default_page_headline']) ) {
+			update_post_meta($post->ID, "default_page_headline", $_POST["default_page_headline"]);
+		}
+		if ( isset($_POST['default_page_subheadline']) ) {
+			update_post_meta($post->ID, "default_page_subheadline", $_POST["default_page_subheadline"]);
+		}
+		if ( isset($_POST['default_page_content']) ) {
+			update_post_meta($post->ID, "default_page_content", $_POST["default_page_content"]);
+		}
+		if ( isset($_POST['default_page_sidebar_headline']) ) {
+			update_post_meta($post->ID, "default_page_sidebar_headline", $_POST["default_page_sidebar_headline"]);
+		}
+		if ( isset($_POST['default_page_sidebar_content']) ) {
+			update_post_meta($post->ID, "default_page_sidebar_content", $_POST["default_page_sidebar_content"]);
+		}
 	}
 
 /**

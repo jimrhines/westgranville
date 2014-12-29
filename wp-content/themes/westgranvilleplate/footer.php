@@ -67,7 +67,7 @@
 				</div>
 				<div class="row">
 					<div class="col md-6">
-						<small class="copyright">&#169; <?php echo date("Y"); ?> <a href=""><?php bloginfo( 'name' ); ?></a></small>
+						<small class="copyright">&#169; <?php echo date("Y"); ?> <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a></small>
 					</div>
 				</div>
 			</footer>
@@ -77,11 +77,15 @@
 			<h2 class="assistive-text">Mobile navigation</h2>
 			<ul class="nav group">
 				<li class="nav-item nav-item-home"><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>">Grid</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>">Tabs</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>">Videos</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>">Contact Form</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>">Examples</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>/about-west-granville">About West Granville</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>/pastors-message">Pastor&#8217;s Message</a></li>
+				<li class="nav-item">
+					<a href="<?php echo home_url( '/' ); ?>" class="nav-link dropdown-toggle" data-toggle="hover" aria-haspopup="true">Youth Education <span class="fa fa-caret-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="<?php echo home_url( '/' ); ?>">Nursery</a></li>
+						<li><a href="<?php echo home_url( '/' ); ?>">Scholarships</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 		<!-- init: navigation -->
