@@ -24,14 +24,7 @@
 					</div>
 					<div class="col md-3">
 						<h2>Directions</h2>
-						<div itemscope itemtype="http://schema.org/NGO">
-							<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-						    	<span itemprop="streetAddress">6935 North 107th Street</span><br />
-								<span itemprop="addressLocality">Milwaukee</span>, <span itemprop="addressRegion">WI</span> <span itemprop="postalCode">53224-4316</span><br />
-								<span itemprop="addressCountry">United States</span>
-						    </span><br />
-						    <a href="tel:4143538680" itemprop="telephone" class="tel">(414) 353-8680</a><br />
-						</div>
+						<?php require 'includes/postal-address.php'; ?>
 						<form id="directions" action="http://maps.google.com/maps" method="get" target="_blank">
 							<label for="saddr">Enter your starting address:</label>
 							<input type="text" name="saddr" id="saddr" size="28" value="" />
@@ -89,8 +82,28 @@
 				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>contact-us">Contact Us</a></li>
 			</ul>
 		</nav>
+		<!-- DOM Loaded JS -->
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script>window.jQuery.ui || document.write('<script src="/content/js/_libs/jqueryui/jquery-ui-1.10.4.min.js"><\/script>')</script>
+		
+		<!-- init: mobile/touch/browser detection -->
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/detection.js"></script>
+
 		<!-- init: navigation -->
 		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/_libs/jquery.hoverIntent/jquery.hoverIntent-r7.js"></script>
 		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/navigation.js"></script>
+		
+		<!-- init: form controls -->
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/_libs/jquery.validate/jquery.validate-1.12.0.js"></script>
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/_libs/jquery.validate/jquery.validate.unobtrusive.js"></script>
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/_libs/jquery.maskedinput/jquery.maskedinput-1.3.1.js"></script>
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/form-controls.js"></script>
+
+		<!-- init: easyResonsiveTabs -->
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/_libs/jquery.easyResponsiveTabs/jquery.easyResponsiveTabs.js"></script>
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/easyResponsiveTabs.js"></script>
+	
+		<!-- init: tooltips -->
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/content/js/shared/tooltips.js"></script>
 	</body>
 </html>

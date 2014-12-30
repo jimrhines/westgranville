@@ -68,15 +68,7 @@
 						<li id="home" class="nav-item nav-item-home"><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
 						<li id="about" class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>about-west-granville">About West Granville</a></li>
 						<li id="pastors-message" class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>pastors-message">Pastor&#8217;s Message</a></li>
-						<li id="missions" class="nav-item">
-							<a class="nav-link dropdown-toggle" data-toggle="hover" aria-haspopup="true">Missions <span class="fa fa-caret-down"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="<?php echo home_url( '/' ); ?>church-missions">Church Missions</a></li>
-								<li><a href="<?php echo home_url( '/' ); ?>community-missions">Community Missions</a></li>
-								<li><a href="<?php echo home_url( '/' ); ?>national-missions">National Missions</a></li>
-								<li><a href="<?php echo home_url( '/' ); ?>world-missions">World Missions</a></li>
-							</ul>
-						</li>
+						<li id="mission" class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>mission">Mission</a></li>
 						<li id="youth-education" class="nav-item">
 							<a href="" class="nav-link dropdown-toggle" data-toggle="hover" aria-haspopup="true">Youth Education <span class="fa fa-caret-down"></span></a>
 							<ul class="dropdown-menu">

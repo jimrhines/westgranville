@@ -47,6 +47,8 @@ nav ol {
 	clip: rect(1px, 1px, 1px, 1px);
 }
 
+.uppercase { text-transform: uppercase; }
+
 .inline-list {
 	@extend .reduced;
 
@@ -86,6 +88,10 @@ small,
 
 	&:hover { color: inherit; }
 }
+
+cite { display: block; }
+
+iframe { border: none; }
 
 @media print {
 
