@@ -15,10 +15,10 @@
 							<h2>Helpful Links</h2>
 							<ul>
 								<li><a href="http://pcusa.org/peacemaking" target="_blank">PCUSA Peacemaking</a></li>
-								<li><a href="">Community Links</a></li>
-								<li><a href="">Scholarships</a></li>
-								<li><a href="<?php bloginfo('url'); ?>/wp-content/uploads/2014/12/wgpc-relief-fund-request-form.doc" target="_blank">Relief Fund Request Form</a></li>
-								<li><a href="<?php bloginfo('url'); ?>/wp-content/uploads/2014/12/annual-report-2013.pdf" target="_blank">2013 Annual Report</a></li>
+								<li><a href="<?php echo home_url( '/' ); ?>community-links">Community Links</a></li>
+								<li><a href="<?php echo home_url( '/' ); ?>scholarships">Scholarships</a></li>
+								<li><span class="fa fa-file-word-o"></span> <a href="<?php echo home_url( '/' ); ?>wp-content/uploads/2014/12/wgpc-relief-fund-request-form.doc">Relief Fund Request Form</a></li>
+								<li><span class="fa fa-file-pdf-o"></span> <a href="<?php echo home_url( '/' ); ?>wp-content/uploads/2014/12/annual-report-2013.pdf" target="_blank">2013 Annual Report</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -44,9 +44,9 @@
 						<nav class="utility">
 							<h2 class="assistive-text">Utility navigation</h2>
 							<ul class="inline-list piped">
-								<li><a href="<?php echo home_url( '/' ); ?>">Legal Notice</a></li>
-								<li><a href="<?php echo home_url( '/' ); ?>">Privacy Policy</a></li>
-								<li><a href="<?php echo home_url( '/' ); ?>">Site Map</a></li>
+								<li><a href="<?php echo home_url( '/' ); ?>legal-notice">Legal Notice</a></li>
+								<li><a href="<?php echo home_url( '/' ); ?>privacy-policy">Privacy Policy</a></li>
+								<li><a href="<?php echo home_url( '/' ); ?>site-map">Site Map</a></li>
 							</ul>
 
 							<ul class="social-nav">
@@ -77,15 +77,16 @@
 			<h2 class="assistive-text">Mobile navigation</h2>
 			<ul class="nav group">
 				<li class="nav-item nav-item-home"><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>/about-west-granville">About West Granville</a></li>
-				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>/pastors-message">Pastor&#8217;s Message</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>about-west-granville">About West Granville</a></li>
+				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>pastors-message">Pastor&#8217;s Message</a></li>
 				<li class="nav-item">
 					<a href="<?php echo home_url( '/' ); ?>" class="nav-link dropdown-toggle" data-toggle="hover" aria-haspopup="true">Youth Education <span class="fa fa-caret-down"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="<?php echo home_url( '/' ); ?>">Nursery</a></li>
-						<li><a href="<?php echo home_url( '/' ); ?>">Scholarships</a></li>
+						<li><a href="<?php echo home_url( '/' ); ?>nursery">Nursery</a></li>
+						<li><a href="<?php echo home_url( '/' ); ?>scholarships">Scholarships</a></li>
 					</ul>
 				</li>
+				<li class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>contact-us">Contact Us</a></li>
 			</ul>
 		</nav>
 		<!-- init: navigation -->

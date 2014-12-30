@@ -52,30 +52,29 @@ get_header(); ?>
 	  				<h2><?php echo $default_page_subheadline ?></h2>
 	  			<?php } echo $default_page_content ?>
 			</div>
-			<div class="col sm-12 md-6 panel">
-				<?php
-					$default_page_sidebar_headline = get_post_custom_values('default_page_sidebar_headline');
-					foreach ( $default_page_sidebar_headline as $key => $value ) {
-						$default_page_sidebar_headline = $value;
-					}
-					$default_page_sidebar_content = get_post_custom_values('default_page_sidebar_content');
-					foreach ( $default_page_sidebar_content as $key => $value ) {
-						$default_page_sidebar_content = $value;
-					}
+			<?php
+				$default_page_sidebar_headline = get_post_custom_values('default_page_sidebar_headline');
+				foreach ( $default_page_sidebar_headline as $key => $value ) {
+					$default_page_sidebar_headline = $value;
+				}
+				$default_page_sidebar_content = get_post_custom_values('default_page_sidebar_content');
+				foreach ( $default_page_sidebar_content as $key => $value ) {
+					$default_page_sidebar_content = $value;
+				}
 
-					$a = array(
-						array($default_page_sidebar_headline, $default_page_sidebar_content),
-					);
+				$a = array(
+					array($default_page_sidebar_headline, $default_page_sidebar_content),
+				);
 
-					for ($row = 0; $row < count($a); $row++) {
-						if($a[$row][0] != "") {
-							echo 
-								"<h3>".$a[$row][0]."</h3>"
-								.$a[$row][1];
-						}
+				for ($row = 0; $row < count($a); $row++) {
+					if($a[$row][0] != "") {
+						echo 
+							"<div class=\"col sm-12 md-6 panel\">
+							<h3>".$a[$row][0]."</h3>"
+							.$a[$row][1]."</div>";
 					}
-				?>
-			</div>
+				}
+			?>
 		</div>
 	</div>
 </div>

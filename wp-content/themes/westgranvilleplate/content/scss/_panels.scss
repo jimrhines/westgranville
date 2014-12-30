@@ -15,11 +15,20 @@
 	h3 {
 		font-size: 170%;
 	}
+}
 
+.home .panel {
 	h4, h5 {
-		margin: 0 0 0em 0;
+		margin: 0;
 		font-weight: bold;
 		font-family: $font-family-sans-serif;
+	}
+}
+
+//about page
+.page-id-22 .panel {
+	h4 {
+		font-size: 135%;
 	}
 }
 
