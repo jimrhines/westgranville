@@ -35,7 +35,7 @@ Template Name: Form Page Processing Page
 					Address Line 2: $AddressLine2\n
 					City: $City\n
 					State: $State\n
-					ZipCode: $ZipCode\n
+					ZIP Code: $ZipCode\n
 					Phone: $Phone\n
 					Email Address: $Email\n
 					Comments/Questions: $Comments\n
@@ -43,5 +43,7 @@ Template Name: Form Page Processing Page
 					Postal Mail Opt In: $PostalMailOptIn";
 		$headers = "From: secretary@westgranville.org";
 		$mail_sent = @mail( $to, $subject, $message, $headers );
+		header('Location: confirmation');
+		echo $message;
 	}
 ?>

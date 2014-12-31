@@ -1,2 +1,9 @@
 User-agent: *
-Disallow: /wp-admin/
+Disallow: /
+# Disallow: /wp-admin/
+# Disallow: /confirmation/
+# Disallow: /form-page-processing/
+
+Sitemap: http://www.westgranville.org/sitemap.xml
+
+# Reference: http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449

@@ -10,6 +10,7 @@ get_header(); ?>
 	<div class="col">
 		<div class="row">
 			<div class="col sm-12 md-6">
+				<?php require 'includes/breadcrumbs.php'; ?>
 				<?php
 					$default_page_headline = get_post_custom_values('default_page_headline');
 	  				foreach ( $default_page_headline as $key => $value ) {
@@ -156,11 +157,11 @@ get_header(); ?>
 
 					<div class="form-group">
 						<label class="checkbox" for="EmailOptIn">
-							<input type="checkbox" id="EmailOptIn" />
-							<strong>Yes</strong>, please sign me up for the West Granville e-mail list.
+							<input type="checkbox" id="EmailOptIn" name="EmailOptIn" />
+							<strong>Yes</strong>, please sign me up for the West Granville Email list.
 						</label>
 						<label class="checkbox" for="PostalMailOptIn">
-							<input type="checkbox" id="PostalMailOptIn" />
+							<input type="checkbox" id="PostalMailOptIn" name="PostalMailOptIn" />
 							<strong>Yes</strong>, please sign me up for the West Granville postal mailing list.
 						</label>
 					</div>

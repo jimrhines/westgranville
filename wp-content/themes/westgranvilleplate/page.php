@@ -15,6 +15,7 @@ get_header(); ?>
 	<div class="col">
 		<div class="row">
 			<div class="col sm-12 md-6">
+				<?php require 'includes/breadcrumbs.php'; ?>
 				<?php
 					$default_page_lead_image = get_post_custom_values('default_page_lead_image');
 	  				foreach ( $default_page_lead_image as $key => $value ) {
@@ -36,9 +37,9 @@ get_header(); ?>
 					foreach ( $default_page_content as $key => $value ) {
 						$default_page_content = $value;
 					}
-	  			?>
-	  			<?php if (!empty($default_page_lead_image)) { ?>
-	  				<img src="<?php bloginfo('url'); ?><?php echo $default_page_lead_image ?>" class="lead-image" alt="<?php echo $default_page_lead_image_alt ?>" />
+	  			 	
+	  			 	if (!empty($default_page_lead_image)) { ?>
+	  					<img src="<?php bloginfo('url'); ?><?php echo $default_page_lead_image ?>" class="lead-image" alt="<?php echo $default_page_lead_image_alt ?>" />
 				<?php } ?>
 				<h1><?php echo $default_page_headline ?></h1>
 	  			<?php if (!empty($default_page_subheadline)) { ?>

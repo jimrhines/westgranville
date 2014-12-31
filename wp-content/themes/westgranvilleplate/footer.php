@@ -30,7 +30,9 @@
 							<input type="text" name="saddr" id="saddr" size="28" value="" />
 			             	<input type="hidden" name="daddr" value="6935 North 107th Street, Milwaukee, WI 53224-4316" />
 			            	<input type="hidden" name="hl" value="en" />
-			            	<input type="submit" class="btn btn-primary" value="Get Directions" />
+			            	<div class="form-actions">
+								<button type="submit" class="btn btn-primary btn-submit">Get Directions</button>
+							</div>
 						</form>
 					</div>
 					<div class="col md-3 last">
