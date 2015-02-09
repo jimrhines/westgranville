@@ -76,6 +76,7 @@
 								<li><a href="<?php echo home_url( '/' ); ?>scholarships">Scholarships</a></li>
 							</ul>
 						</li>
+						<li id="events" class="nav-item"><a class="nav-link" href="<?php echo home_url( '/' ); ?>events">Events</a></li>
 					</ul>
 				</nav>
 
