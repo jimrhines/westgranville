@@ -1,4 +1,5 @@
-.btn {
+.btn,
+#submit {
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
@@ -30,7 +31,8 @@
 	&::-moz-focus-inner { border: none; }
 }
 
-.btn-primary {
+.btn-primary,
+#submit {
 	color: $btn-primary-color;
 	background: $btn-primary-bg;
 	@if $btn-border != 'none' {
