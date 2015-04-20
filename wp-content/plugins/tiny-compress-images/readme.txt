@@ -4,7 +4,7 @@ Donate link: https://tinypng.com/
 Tags: compress, optimize, shrink, improve, images, tinypng, tinyjpg, jpeg, jpg, png, lossy, jpegmini, crunch, minify, smush, save, bandwidth, website, speed, faster, performance, panda
 Requires at least: 3.0.6
 Tested up to: 4.1
-Stable tag: 1.1.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ This plugin automatically optimizes your images by integrating with the popular 
 
 = How does it work? =
 
-After you upload an image to your WordPress site, each resized image is uploaded to the TinyPNG or TinyJPG service. Your image is analyzed to apply the best possible compression. Based on the content of your image an optimal strategy is chosen. The result is sent back to your WordPress site. On average JPEG images are compressed by 40-60% and PNG images by 50-80% without visible loss in quality. Your website will load faster for your visitors, and you’ll save storage space and bandwidth!
+After you upload an image to your WordPress site, each resized image is uploaded to the TinyJPG or TinyPNG service. Your image is analyzed to apply the best possible compression. Based on the content of your image an optimal strategy is chosen. The result is sent back to your WordPress site. On average JPEG images are compressed by 40-60% and PNG images by 50-80% without visible loss in quality. Your website will load faster for your visitors, and you’ll save storage space and bandwidth!
 
 = Getting started =
 
@@ -68,6 +68,15 @@ The API key can also be configured in wp-config.php. You can add a TINY_API_KEY 
 4. Compress individual images in case additional sizes have to be compressed.
 
 == Changelog ==
+
+= 1.2.1 =
+* Bugfix that prevents recompressing the original when no additional image sizes can be found in the metadata. (introduced in 1.2.0)
+
+= 1.2.0 =
+* Display connection status and number of compressions this month on the settings page. This also allows you to check if you entered a valid API key.
+* Show a notice to administrators when reaching the monthly compression limit (in case you're on a fixed or free plan).
+* The plugin will now work when php's parse_ini_file is disabled on your host.
+* Bugfix that avoids a warning when no additional image sizes can be found in the metadata.
 
 = 1.1.0 =
 * The API key can now be set with the TINY_API_KEY constant in wp-config.php. This will work for normal and multisite WordPress installations.

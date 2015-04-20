@@ -30,7 +30,7 @@ get_header(); ?>
 				<p>Recognizing that God&#8217;s Grace is available to everyone, we open our doors and strive for full participation for all believers regardless of their gender, age, ethnicity, sexual identity, physical or mental ability, social status, or family structure.</p>
 				<p>Guide our steps as we work toward unity.</p>
 				<div class="video-container">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/zU6waBsnMgs?showinfo=0&amp;rel=0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zU6waBsnMgs?showinfo=0&amp;rel=0&amp;html5=1" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="col sm-12 md-3">
