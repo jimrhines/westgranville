@@ -50,7 +50,7 @@
 			<header id="site-header" role="banner">
 				<div class="row app-bar">
 					<div class="col">
-						<a href="/home.php">
+						<a href="<?php echo home_url( '/' ); ?>">
 							<img id="branding" src="<?php bloginfo('stylesheet_directory'); ?>/content/img/presbyterian-church-usa.gif" alt="Presbyterian Church USA" />
 							<h6 id="site-title" class="h1"><span>The Meaning of Faithful Community</span> <?php bloginfo( 'name' ); ?></h6>
 						</a>
