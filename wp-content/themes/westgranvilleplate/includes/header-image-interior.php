@@ -1,7 +1,7 @@
 <div id="positioning-statement">
 	<?php
 		$default_page_header_image = get_post_custom_values('default_page_header_image');
-		foreach ( $default_page_header_image as $key => $value ) {
+		foreach ((array) $default_page_header_image as $key => $value ) {
 			$default_page_header_image = $value;
 		}
 	?>

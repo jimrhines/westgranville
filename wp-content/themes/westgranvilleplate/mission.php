@@ -13,23 +13,23 @@ get_header(); ?>
 				<?php require 'includes/breadcrumbs.php'; ?>
 				<?php
 					$default_page_lead_image = get_post_custom_values('default_page_lead_image');
-	  				foreach ( $default_page_lead_image as $key => $value ) {
+	  				foreach ((array) $default_page_lead_image as $key => $value ) {
 	    				$default_page_lead_image = $value;
 	  				}
 	  				$default_page_lead_image_alt = get_post_custom_values('default_page_lead_image_alt');
-	  				foreach ( $default_page_lead_image_alt as $key => $value ) {
+	  				foreach ((array) $default_page_lead_image_alt as $key => $value ) {
 	    				$default_page_lead_image_alt = $value;
 	  				}
 					$default_page_headline = get_post_custom_values('default_page_headline');
-	  				foreach ( $default_page_headline as $key => $value ) {
+	  				foreach ((array) $default_page_headline as $key => $value ) {
 	    				$default_page_headline = $value;
 	  				}
 	  				$default_page_subheadline = get_post_custom_values('default_page_subheadline');
-					foreach ( $default_page_subheadline as $key => $value ) {
+					foreach ((array) $default_page_subheadline as $key => $value ) {
 						$default_page_subheadline = $value;
 					}
 					$default_page_content = get_post_custom_values('default_page_content');
-					foreach ( $default_page_content as $key => $value ) {
+					foreach ((array) $default_page_content as $key => $value ) {
 						$default_page_content = $value;
 					}
 	  				

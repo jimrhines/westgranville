@@ -39,67 +39,67 @@ get_header(); ?>
 					<ul class="schedule-news reduced">
 						<?php
 							$worship_schedule_A_month = get_post_custom_values('worship_schedule_A_month');
-							foreach ( $worship_schedule_A_month as $key => $value ) {
+							foreach ((array) $worship_schedule_A_month as $key => $value ) {
 								$worship_schedule_A_month = $value;
 							}
 							$worship_schedule_A_date = get_post_custom_values('worship_schedule_A_date');
-							foreach ( $worship_schedule_A_date as $key => $value ) {
+							foreach ((array) $worship_schedule_A_date as $key => $value ) {
 								$worship_schedule_A_date = $value;
 							}
 							$worship_schedule_A_time = get_post_custom_values('worship_schedule_A_time');
-							foreach ( $worship_schedule_A_time as $key => $value ) {
+							foreach ((array) $worship_schedule_A_time as $key => $value ) {
 								$worship_schedule_A_time = $value;
 							}
 							$worship_schedule_A_content = get_post_custom_values('worship_schedule_A_content');
-							foreach ( $worship_schedule_A_content as $key => $value ) {
+							foreach ((array) $worship_schedule_A_content as $key => $value ) {
 								$worship_schedule_A_content = $value;
 							}
 							$worship_schedule_B_month = get_post_custom_values('worship_schedule_B_month');
-							foreach ( $worship_schedule_B_month as $key => $value ) {
+							foreach ((array) $worship_schedule_B_month as $key => $value ) {
 								$worship_schedule_B_month = $value;
 							}
 							$worship_schedule_B_date = get_post_custom_values('worship_schedule_B_date');
-							foreach ( $worship_schedule_B_date as $key => $value ) {
+							foreach ((array) $worship_schedule_B_date as $key => $value ) {
 								$worship_schedule_B_date = $value;
 							}
 							$worship_schedule_B_time = get_post_custom_values('worship_schedule_B_time');
-							foreach ( $worship_schedule_B_time as $key => $value ) {
+							foreach ((array) $worship_schedule_B_time as $key => $value ) {
 								$worship_schedule_B_time = $value;
 							}
 							$worship_schedule_B_content = get_post_custom_values('worship_schedule_B_content');
-							foreach ( $worship_schedule_B_content as $key => $value ) {
+							foreach ((array) $worship_schedule_B_content as $key => $value ) {
 								$worship_schedule_B_content = $value;
 							}
 							$worship_schedule_C_month = get_post_custom_values('worship_schedule_C_month');
-							foreach ( $worship_schedule_C_month as $key => $value ) {
+							foreach ((array) $worship_schedule_C_month as $key => $value ) {
 								$worship_schedule_C_month = $value;
 							}
 							$worship_schedule_C_date = get_post_custom_values('worship_schedule_C_date');
-							foreach ( $worship_schedule_C_date as $key => $value ) {
+							foreach ((array) $worship_schedule_C_date as $key => $value ) {
 								$worship_schedule_C_date = $value;
 							}
 							$worship_schedule_C_time = get_post_custom_values('worship_schedule_C_time');
-							foreach ( $worship_schedule_C_time as $key => $value ) {
+							foreach ((array) $worship_schedule_C_time as $key => $value ) {
 								$worship_schedule_C_time = $value;
 							}
 							$worship_schedule_C_content = get_post_custom_values('worship_schedule_C_content');
-							foreach ( $worship_schedule_C_content as $key => $value ) {
+							foreach ((array) $worship_schedule_C_content as $key => $value ) {
 								$worship_schedule_C_content = $value;
 							}
 							$worship_schedule_D_month = get_post_custom_values('worship_schedule_D_month');
-							foreach ( $worship_schedule_D_month as $key => $value ) {
+							foreach ((array) $worship_schedule_D_month as $key => $value ) {
 								$worship_schedule_D_month = $value;
 							}
 							$worship_schedule_D_date = get_post_custom_values('worship_schedule_D_date');
-							foreach ( $worship_schedule_D_date as $key => $value ) {
+							foreach ((array) $worship_schedule_D_date as $key => $value ) {
 								$worship_schedule_D_date = $value;
 							}
 							$worship_schedule_D_time = get_post_custom_values('worship_schedule_D_time');
-							foreach ( $worship_schedule_D_time as $key => $value ) {
+							foreach ((array) $worship_schedule_D_time as $key => $value ) {
 								$worship_schedule_D_time = $value;
 							}
 							$worship_schedule_D_content = get_post_custom_values('worship_schedule_D_content');
-							foreach ( $worship_schedule_D_content as $key => $value ) {
+							foreach ((array) $worship_schedule_D_content as $key => $value ) {
 								$worship_schedule_D_content = $value;
 							}
 
@@ -133,19 +133,19 @@ get_header(); ?>
 					<ul class="schedule-news reduced">
 						<?php
 							$latest_news_A_content = get_post_custom_values('latest_news_A_content');
-							foreach ( $latest_news_A_content as $key => $value ) {
+							foreach ((array) $latest_news_A_content as $key => $value ) {
 								$latest_news_A_content = $value;
 							}
 							$latest_news_B_content = get_post_custom_values('latest_news_B_content');
-							foreach ( $latest_news_B_content as $key => $value ) {
+							foreach ((array) $latest_news_B_content as $key => $value ) {
 								$latest_news_B_content = $value;
 							}
 							$latest_news_C_content = get_post_custom_values('latest_news_C_content');
-							foreach ( $latest_news_C_content as $key => $value ) {
+							foreach ((array) $latest_news_C_content as $key => $value ) {
 								$latest_news_C_content = $value;
 							}
 							$latest_news_D_content = get_post_custom_values('latest_news_D_content');
-							foreach ( $latest_news_D_content as $key => $value ) {
+							foreach ((array) $latest_news_D_content as $key => $value ) {
 								$latest_news_D_content = $value;
 							}
 

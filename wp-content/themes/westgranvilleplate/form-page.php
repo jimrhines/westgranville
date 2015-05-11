@@ -13,11 +13,11 @@ get_header(); ?>
 				<?php require 'includes/breadcrumbs.php'; ?>
 				<?php
 					$default_page_headline = get_post_custom_values('default_page_headline');
-	  				foreach ( $default_page_headline as $key => $value ) {
+	  				foreach ((array) $default_page_headline as $key => $value ) {
 	    				$default_page_headline = $value;
 	  				}
 	  				$default_page_content = get_post_custom_values('default_page_content');
-					foreach ( $default_page_content as $key => $value ) {
+					foreach ((array) $default_page_content as $key => $value ) {
 						$default_page_content = $value;
 					}
 	  			?>
@@ -180,11 +180,11 @@ get_header(); ?>
 			</div>
 			<?php
 				$default_page_sidebar_headline = get_post_custom_values('default_page_sidebar_headline');
-				foreach ( $default_page_sidebar_headline as $key => $value ) {
+				foreach ((array) $default_page_sidebar_headline as $key => $value ) {
 					$default_page_sidebar_headline = $value;
 				}
 				$default_page_sidebar_content = get_post_custom_values('default_page_sidebar_content');
-				foreach ( $default_page_sidebar_content as $key => $value ) {
+				foreach ((array) $default_page_sidebar_content as $key => $value ) {
 					$default_page_sidebar_content = $value;
 				}
 
