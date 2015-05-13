@@ -104,13 +104,13 @@
 	}
 
 	.nav-item > a {
-		color: #FFF;
+		color: #483737;
 
 		.icon-arrow-down { border-top-color: #ccc; }
 
 		&:hover {
 			background-color: #D6CAC0;
-			color: #fff;
+			color: #174c81;
 		}
 	}
 
@@ -121,7 +121,6 @@
 
 	.nav-item.active > a {
 		background-color: #D6CAC0;
-		color: #FFF;
 	}
 }
 

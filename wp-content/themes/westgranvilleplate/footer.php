@@ -14,6 +14,7 @@
 						<nav>
 							<h2>Helpful Links</h2>
 							<ul>
+								<li><a href="<?php echo home_url( '/' ); ?>contact-us">Contact Us</a></li>
 								<li><a href="http://pcusa.org/peacemaking" target="_blank">PCUSA Peacemaking</a></li>
 								<li><a href="<?php echo home_url( '/' ); ?>community-links">Community Links</a></li>
 								<li><a href="<?php echo home_url( '/' ); ?>scholarships">Scholarships</a></li>
