@@ -24,8 +24,8 @@ Template Name: Form Page Processing Page
 		$error = "You are a robot.";
 	else {
 		//craft and send email
-		//$to = 'secretary@westgranville.org,pastord@westgranville.org,jimrhines@hotmail.com'; 
-		$to = 'jimrhines@hotmail.com'; 
+		$to = 'secretary@westgranville.org,pastord@westgranville.org,jimrhines@hotmail.com'; 
+		//$to = 'jimrhines@hotmail.com'; 
 		$subject = 'New Web Lead'; 
 		$message = "A lead has been generated from the website, information is below.\n
 					First Name: $FirstName\n
