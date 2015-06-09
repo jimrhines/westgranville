@@ -3,8 +3,8 @@ Contributors: TinyPNG
 Donate link: https://tinypng.com/
 Tags: compress, optimize, shrink, improve, images, tinypng, tinyjpg, jpeg, jpg, png, lossy, jpegmini, crunch, minify, smush, save, bandwidth, website, speed, faster, performance, panda
 Requires at least: 3.0.6
-Tested up to: 4.1
-Stable tag: 1.2.1
+Tested up to: 4.2
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,14 @@ Speed up your website. Optimize your JPEG and PNG images automatically with Tin
 Make your website faster by compressing your JPEG and PNG images.
 
 This plugin automatically optimizes your images by integrating with the popular image compression services TinyJPG and TinyPNG.
+
+= Features =
+
+* Compress all sizes.
+* Multisite support.
+* Bulk compress: compress your complete library with one click.
+* See your usage directly from the Media settings.
+* Detects automatically if an image should be recompressed.
 
 = How does it work? =
 
@@ -34,7 +42,7 @@ Got questions or feedback? Let us know! Contact us at support@tinypng.com or fin
 
 = Contributors =
 
-Want to contribute? Checkout our [GitHub page](https://github.com/TinyPNG/wordpress-plugin).
+Want to contribute? Checkout our [GitHub page](https://github.com/tinify/wordpress-plugin).
 
 == Installation ==
 
@@ -63,11 +71,16 @@ The API key can also be configured in wp-config.php. You can add a TINY_API_KEY 
 == Screenshots ==
 
 1. Enter your TinyPNG or TinyJPG API key and configure the image sizes you would like to have compressed.
-2. See how much space TinyPNG has saved you from the media browser!
+2. See how much space TinyPNG has saved you from the media browser and compress additional sizes per image.
 3. Bulk compress existing images after installing the plugin or when additional sizes have to be compressed.
-4. Compress individual images in case additional sizes have to be compressed.
+4. Show progress while bulk compressing (selection from) media library.
+5. Bulk compress complete media library.
 
 == Changelog ==
+
+= 1.3.0 =
+* Improved bulk compressions from media library. You can now also bulk compress your whole media library in one step.
+* Intelligent detection if file is already compressed or was altered by another plugin and should be recompressed.
 
 = 1.2.1 =
 * Bugfix that prevents recompressing the original when no additional image sizes can be found in the metadata. (introduced in 1.2.0)

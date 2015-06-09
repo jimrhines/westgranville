@@ -132,12 +132,12 @@
 	}
 
 	li.worship-schedule {
-		display: flex;	
+		display: flex;
 	}
 
 	.worship-date-container {
-		float: left;
-		margin: 0 1em 0 0;
+		margin: 0 3.5em 0 0;
+		width: 0;
 		
 		.worship-date,
 		.worship-month,
