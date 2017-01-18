@@ -19,7 +19,7 @@
 								<li><a href="<?php echo home_url( '/' ); ?>community-links">Community Links</a></li>
 								<li><a href="<?php echo home_url( '/' ); ?>scholarships">Scholarships</a></li>
 								<li><span class="fa fa-file-word-o"></span> <a href="<?php echo home_url( '/' ); ?>wp-content/uploads/2014/12/wgpc-relief-fund-request-form.doc">Relief Fund Request Form</a></li>
-								<li><span class="fa fa-file-pdf-o"></span> <a href="<?php echo home_url( '/' ); ?>/wp-content/uploads/2015/05/2014-west-granville-annual-report.pdf" target="_blank">2014 Annual Report</a></li>
+								<li><span class="fa fa-file-pdf-o"></span> <a href="<?php echo home_url( '/' ); ?>wp-content/uploads/2017/01/2016-west-granville-annual-report.pdf" target="_blank">2016 Annual Report</a></li>
 							</ul>
 						</nav>
 					</div>
