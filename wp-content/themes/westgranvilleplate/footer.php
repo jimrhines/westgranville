@@ -44,20 +44,16 @@
 								<li><a href="<?php echo home_url( '/' ); ?>privacy-policy">Privacy Policy</a></li>
 								<li><a href="<?php echo home_url( '/' ); ?>site-map">Site Map</a></li>
 							</ul>
-
 							<ul class="social-nav">
 								<li>
-									<a href="https://www.facebook.com/groups/131212920287320/" class="icon icon-facebook" target="_blank">
+									<a href="https://www.facebook.com/groups/131212920287320/" class="icon icon-facebook" target="_blank" rel="noopener">
 										<span class="fa fa-facebook"></span><span class="assistive-text">Facebook</span>
 									</a>
 								</li>
 							</ul>
-							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-								<input type="hidden" name="cmd" value="_s-xclick" />
-								<input type="hidden" name="hosted_button_id" value="ZCDNM3NXXYYLN" />
-								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal &#45; The safer, easier way to pay online." />
-								<img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" />
-							</form>
+							<a href="https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=wWsk24ZWJSTZKsGd1RMKlg0BDvsSG3VIWQCPJNNxD8upkiY7JlDavDsozUE7KG0nFx2NSo8LdUKGuGuF396vbY0G_UYZyZ7_xxHh3rTt_BsiYnTg5dP4O6rpX5QvPEWlBhHDN59kLZFffwKfYERpQu4Nez3j6JnuQyWYPeB6xkE=&ver=3" target="_blank" rel="noopener">
+								<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate" />
+							</a>
 						</nav>
 					</div>
 				</div>
